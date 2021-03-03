@@ -3,9 +3,7 @@ img{
     position: relative;
     left: 100px;
     top: 500px;
-    animation-name: jump, turn;
-    animation-duration: 20s;
-    
+    animation:jump 20s, turn 4s infinite;
 
 }
 
@@ -35,6 +33,6 @@ body{
     100%{ top: 500px; left: 1100px;}
 }
 @keyframes turn{
-    0%{rotate: 0;}
-    100%{rotate: 360;}
+    0%{transform: rotate(0deg);}
+    100%{transform:  rotate(360deg);}
 }
